@@ -32,3 +32,6 @@ $(document).on "turbolinks:load", ->
           id: item
           text: item
         )
+
+$(document).on "turbolinks:before-cache", ->
+  $('#tags-js').select2('destroy');
