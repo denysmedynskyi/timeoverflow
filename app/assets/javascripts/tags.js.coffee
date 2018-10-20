@@ -1,4 +1,4 @@
-$ ->
+$(document).on "turbolinks:load", ->
   $(".switch_offer-js").on "click", ->
     $.ajax '/tags/offers',
       type: 'GET'

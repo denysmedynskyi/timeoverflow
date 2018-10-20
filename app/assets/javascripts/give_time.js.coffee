@@ -10,4 +10,4 @@ giveTimeReadyFn = () ->
 
   $( "#new_transfer" ).validate(config)
 
-$( document ).ready giveTimeReadyFn
+$(document).on "turbolinks:load", giveTimeReadyFn
